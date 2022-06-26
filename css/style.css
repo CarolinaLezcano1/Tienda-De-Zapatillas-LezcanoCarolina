@@ -134,7 +134,7 @@ grid-area: caja2;
 }
 
 .hijo-grid4{
-	margin: 0%;
+	margin: auto;
     padding: 1%;
 	color: white;
 	display: flex;
@@ -211,7 +211,6 @@ width: 60%;
 	text-align: center;
 	margin-top: 20px;	
 }
-
 
 
 .marca{
@@ -291,6 +290,96 @@ textarea{
 	justify-content: center;
 	align-items: center;
    }
+
+   .grid-compra-padre{
+	display: grid;
+	text-align: center;
+	grid-template-columns:repeat(3, 1fr);
+	grid-template-rows: auto;
+	grid-template-areas:
+	 "img img img" 
+	  "td td compra" 
+	  "comentario comentario compra";
+   }
+
+   .compra-hijo1{
+	grid-area: img;
+   }
+
+   .compra-hijo2{
+	grid-area: td;
+	margin: 0%;
+    padding: 1%;
+	color: white;
+	display: flex;
+	align-items: center;
+	align-content:center ;
+	justify-content: center;
+	justify-items: center;
+	background: black;
+	text-align: center;
+   }
+
+   .compra-hijo3{
+	grid-area: compra;
+	margin: 0%;
+    padding: 1%;
+	color: white;
+	display: flex;
+	align-items: center;
+	align-content:center ;
+	justify-content: center;
+	justify-items: center;
+	background: black;
+	text-align: center;
+   }
+
+   .compra-hijo4{
+	grid-area: comentario;
+	margin: 0%;
+    padding: 1%;
+	color: white;
+	display: flex;
+	align-items: center;
+	align-content:center ;
+	justify-content: center;
+	justify-items: center;
+	background: black;
+	text-align: center;
+   }
+
+
+.compra-hijo2:hover,
+.compra-hijo3:hover,
+.compra-hijo4:hover,.btn:hover{
+	background: white;
+	color: black;
+}
+
+.contenido-nosotros{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	justify-items: center;
+	flex-direction: column;
+	margin: auto;
+	color: black;
+	width: 80%;
+	background: rgba(255, 255, 255, 0.205);
+}
+
+.contenido-nosotros p{
+	width: 80%;
+	margin: auto;
+}
+
+.contenido-nosotros:hover{
+	color: white;
+	width: 80%;
+	margin: auto;
+	background: black;
+}
   
 /* fin de main */
 /* inicia aside */
@@ -340,37 +429,108 @@ footer{
 
 /* fin de footer */
 /* inicio de responsive */
-
-@media (min-width: 600px){
-	.grid-container{
-	  grid-template-columns: 1fr 1fr;
-	  grid-template-rows: auto;
-	  grid-template-areas:
-	  "header   header" 
-	  "nosotros    nosotros"
-	  "section   aside"
-	  "section    mapa"
-	  "footer   footer";
-	  }
-  }
-  
-  @media (min-width: 900px){
-	  .grid-container{
-		  display: grid;
-		  grid-template-columns: 1fr;
-		  grid-template-rows: auto;
-		  grid-template-areas:
-		 "header" 
-		 "nosotros"
-		 "section"
-		 "aside"
-		 "mapa"
-		 "footer";
-	  }
-		nav{
-		  flex-direction: row;
-		}
+@media (max-width:900px){
+	.grid-padre{
+		grid-template-columns:1fr 1fr;
+		grid-template-rows: auto;
+		grid-template-areas:
+	   "caja1 caja1"
+	   "caja2 caja2"
+	   "caja3 caja3"
+	   "caja5 caja4";
 	}
+
+	.grid-padre-contacto{
+		grid-template-columns:1fr 1fr;
+		grid-template-rows: auto ;
+		grid-template-areas:
+		"contacto mapa"
+		"marca datos";
+	}
+
+
+	.grid-compra-padre{
+		text-align: center;
+		grid-template-columns:1fr 1fr 1fr;
+		grid-template-rows: auto;
+		grid-template-areas:
+		 "img img img" 
+		  "td td compra" 
+		  "comentario comentario compra";
+	   }
+	}
+  
+  
+
+@media (max-width:600px){
+	.grid-padre{
+		grid-template-columns:1fr;
+		grid-template-rows: auto;
+		grid-template-areas:
+	   "caja1"
+	   "caja2"
+	   "caja3"
+	   "caja4"
+	   "caja5";
+	}
+
+	.grid-padre-contacto{
+		grid-template-columns:1fr;
+		grid-template-rows: auto ;
+		grid-template-areas:
+		"contacto"
+		"mapa"
+		"marca" 
+		"datos";
+	}
+
+
+	.grid-compra-padre{
+		text-align: center;
+		grid-template-columns:1fr;
+		grid-template-rows: auto;
+		grid-template-areas:
+		 "img" 
+		  "td" 
+		  "compra" 
+		  "comentario";
+	   }
+	}
+
+	@media (max-width:350px){
+		.grid-padre{
+			grid-template-columns:1fr;
+			grid-template-rows: auto;
+			grid-template-areas:
+		   "caja1"
+		   "caja2"
+		   "caja3"
+		   "caja4"
+		   "caja5";
+		}
+	
+		.grid-padre-contacto{
+			grid-template-columns:1fr;
+			grid-template-rows: auto ;
+			grid-template-areas:
+			"contacto"
+			"mapa"
+			"marca" 
+			"datos";
+		}
+	
+	
+		.grid-compra-padre{
+			text-align: center;
+			grid-template-columns:1fr;
+			grid-template-rows: auto;
+			grid-template-areas:
+			 "img" 
+			  "td" 
+			  "compra" 
+			  "comentario";
+		   }
+		}
 	
   
 /* fin de responsive */
