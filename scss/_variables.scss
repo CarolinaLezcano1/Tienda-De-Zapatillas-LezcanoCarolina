@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+$Merry:'Merriweather', serif;
+$negro: black;
+$blanco: white;
+$rosa: pink;
+$azulClaro: lightblue;
+
+@mixin linear-gradient($sentido){
+    background : linear-gradient(to $sentido,pink, lightblue);
+}

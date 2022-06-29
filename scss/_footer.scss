@@ -1,0 +1,30 @@
+/* inicia footer */
+footer{
+	grid-area: footer;
+}
+
+footer{
+	background: linear-gradient(to left, lightblue, pink);
+   }
+  
+   footer .titulo{
+	text-align: center;
+   }
+  
+   footer .copy{
+	background: linear-gradient(to left, lightblue, pink);
+	display: flex;
+	justify-content: center;
+   }
+  
+   .redes-sociales{
+	display: flex;
+	justify-content: center;
+   }
+  
+   .redes-sociales li{
+	font-size: 30px;
+	padding: 0 20px;
+   }
+
+/* fin de footer */

@@ -1,0 +1,76 @@
+*{
+	overflow-x: hidden;
+}
+
+body{
+	font-family:'Roboto', sans-serif;
+	min-height: 100vh;
+	align-content: center;
+	background: url(../img/fondo.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.grid-container{
+	box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+	border-radius: 4px;
+	text-align: center;
+}
+
+h2:hover{
+	color:blueviolet;
+  }
+
+ 
+
+.grid-contacto{
+	display: grid;
+	grid-template-columns:1fr;
+	grid-template-rows: auto  1fr 1fr auto;
+	grid-template-areas:
+	"header"
+	"contacto"
+	"mapa"
+	"footer"
+}
+
+
+h1{
+    @include linear-gradient(right);
+	text-align: center;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+}
+	
+
+.linear-gradient{
+	background-color: Linear-gradient(to top, blue, pink);
+ }
+
+ .bg-lightblue{
+	background-color: lightblue;
+  }
+  
+  .bg-black{
+	background-color: black;
+  }
+
+  .text-blue{
+    color: blue;
+}
+
+.text-regular{
+color: pink;
+line-height: 1.4em;
+font-size: 1.1em;
+}
+
+
+.text-white{
+  color: white;
+  }
+
+ .linear-gradient{
+background: linear-gradient(-96deg, lightblue, pink);
+ }

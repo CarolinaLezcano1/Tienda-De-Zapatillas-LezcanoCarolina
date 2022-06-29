@@ -1,0 +1,106 @@
+/* inicio de responsive */
+@media (max-width:900px){
+	.grid-padre{
+		grid-template-columns:1fr 1fr;
+		grid-template-rows: auto;
+		grid-template-areas:
+	   "caja1 caja1"
+	   "caja2 caja2"
+	   "caja3 caja3"
+	   "caja5 caja4";
+	}
+
+	.grid-padre-contacto{
+		grid-template-columns:1fr 1fr;
+		grid-template-rows: auto ;
+		grid-template-areas:
+		"contacto mapa"
+		"marca datos";
+	}
+
+
+	.grid-compra-padre{
+		text-align: center;
+		grid-template-columns:1fr 1fr 1fr;
+		grid-template-rows: auto;
+		grid-template-areas:
+		 "img img img" 
+		  "td td compra" 
+		  "comentario comentario compra";
+	   }
+	}
+  
+  
+
+@media (max-width:600px){
+	.grid-padre{
+		grid-template-columns:1fr;
+		grid-template-rows: auto;
+		grid-template-areas:
+	   "caja1"
+	   "caja2"
+	   "caja3"
+	   "caja4"
+	   "caja5";
+	}
+
+	.grid-padre-contacto{
+		grid-template-columns:1fr;
+		grid-template-rows: auto ;
+		grid-template-areas:
+		"contacto"
+		"mapa"
+		"marca" 
+		"datos";
+	}
+
+
+	.grid-compra-padre{
+		text-align: center;
+		grid-template-columns:1fr;
+		grid-template-rows: auto;
+		grid-template-areas:
+		 "img" 
+		  "td" 
+		  "compra" 
+		  "comentario";
+	   }
+	}
+
+	@media (max-width:350px){
+		.grid-padre{
+			grid-template-columns:1fr;
+			grid-template-rows: auto;
+			grid-template-areas:
+		   "caja1"
+		   "caja2"
+		   "caja3"
+		   "caja4"
+		   "caja5";
+		}
+	
+		.grid-padre-contacto{
+			grid-template-columns:1fr;
+			grid-template-rows: auto ;
+			grid-template-areas:
+			"contacto"
+			"mapa"
+			"marca" 
+			"datos";
+		}
+	
+	
+		.grid-compra-padre{
+			text-align: center;
+			grid-template-columns:1fr;
+			grid-template-rows: auto;
+			grid-template-areas:
+			 "img" 
+			  "td" 
+			  "compra" 
+			  "comentario";
+		   }
+		}
+	
+  
+/* fin de responsive */
