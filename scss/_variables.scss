@@ -6,6 +6,15 @@ $blanco: white;
 $rosa: pink;
 $azulClaro: lightblue;
 
-@mixin linear-gradient($sentido){
-    background : linear-gradient(to $sentido,pink, lightblue);
+@mixin linear-gradient($sentido,$color1,$color2){
+    background : linear-gradient(to $sentido,$color1,$color2);
 }
+
+$paleta:( 
+    'negro': black,
+    'blanco': white,
+    'rosa': pink,
+    'azulclaro': lightblue,
+);
+
+

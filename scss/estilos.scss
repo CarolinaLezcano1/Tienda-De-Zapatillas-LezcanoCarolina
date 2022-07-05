@@ -5,3 +5,467 @@
 @import "_main";
 @import "_footer";
 @import "_media";
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+
+* {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  align-content: center;
+  background: url(../img/fondo.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.grid-container {
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  text-align: center;
+}
+
+h2:hover {
+  color: blueviolet;
+}
+
+.grid-contacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto  1fr 1fr auto;
+  grid-template-areas: "header" "contacto" "mapa" "footer";
+}
+
+h1 {
+  background: linear-gradient(to right, pink, lightblue);
+  text-align: center;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3em;
+}
+
+.linear-gradient {
+  background-color: Linear-gradient(to top, blue, pink);
+}
+
+.bg-lightblue {
+  background-color: lightblue;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.text-regular {
+  color: pink;
+  line-height: 1.4em;
+  font-size: 1.1em;
+}
+
+.text-white {
+  color: white;
+}
+
+.linear-gradient {
+  background: linear-gradient(-96deg, lightblue, pink);
+}
+
+/* inicia header */
+
+header {
+  grid-area: header;
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+  background: #EFDAD7;
+  height: auto;
+  width: auto;
+  background-image: linear-gradient(#df15f1, pink);
+}
+
+/* fin de header */
+/* inicia nav */
+
+nav a {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+/* fin de nav */
+/* inicia main */
+
+.grid-padre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "caja1 caja1" "caja2 caja2 " "caja3 caja3" "caja5 caja4";
+}
+
+.tablas-contacto {
+  width: 90%;
+  padding: auto;
+  border: 3px;
+}
+
+.hijo-grid {
+  grid-area: caja1;
+}
+
+.hijo-grid2 {
+  grid-area: caja2;
+}
+
+.hijo-grid3 {
+  grid-area: caja3;
+}
+
+.hijo-grid4 {
+  margin: auto;
+  padding: 1%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  grid-area: caja4;
+  background: black;
+  text-align: center;
+}
+
+.alinear-centro, .hijo-grid4 {
+  align-items: center;
+  align-content: center;
+}
+
+.hijo-grid5 {
+  align-items: center;
+  align-content: center;
+  background: black;
+  color: white;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  grid-area: caja5;
+  text-align: center;
+}
+
+.formulario-hijo {
+  width: 60%;
+}
+
+.btn {
+  width: auto;
+  margin: auto;
+  position: relative;
+  cursor: pointer;
+  color: aliceblue;
+}
+
+.hijo-grid5:hover, .hijo-grid4:hover, .btn:hover {
+  background: white;
+  color: black;
+}
+
+.grid-padre-contacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "contacto mapa" "marca datos";
+}
+
+.contacto {
+  grid-area: contacto;
+  margin: 0 15%;
+}
+
+.mapa {
+  grid-area: mapa;
+  height: 100%;
+  margin: 0 1%;
+  font-size: 15px;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+}
+
+.datos {
+  grid-area: datos;
+  display: flex;
+  flex-direction: column;
+  margin-right: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  background: linear-gradient(to top, pink, lightblue);
+
+  div ul li {
+    background: transparent;
+  }
+}
+
+.marca {
+  grid-area: marca;
+  margin-left: 0;
+  height: 280px;
+  margin-top: 20px;
+}
+
+.flex-direction {
+  display: inline-flex;
+}
+
+.sobrenosotros {
+  grid-area: nosotros;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(#0df0f0, pink);
+}
+
+.contacto {
+  grid-area: contacto;
+  margin: 0;
+}
+
+form {
+  width: 30%;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+  padding: auto;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 2px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 2px;
+  box-sizing: border-box;
+  font-size: 15px;
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+#boton {
+  background: #31384A;
+  color: white;
+  padding: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.galeria {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+
+  img {
+    max-width: 400px;
+    padding: 1rem;
+  }
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-compra-padre {
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "img img img" "td td compra"  "comentario comentario compra";
+}
+
+.compra-hijo1 {
+  grid-area: img;
+}
+
+.compra-hijo2 {
+  grid-area: td;
+  margin: 0%;
+  padding: 1%;
+  color: white;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  background: black;
+  text-align: center;
+}
+
+.compra-hijo3 {
+  grid-area: compra;
+  margin: 0%;
+  padding: 1%;
+  color: white;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  background: black;
+  text-align: center;
+}
+
+.compra-hijo4 {
+  grid-area: comentario;
+  margin: 0%;
+  padding: 1%;
+  color: white;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  background: black;
+  text-align: center;
+}
+
+.compra-hijo2:hover, .compra-hijo3:hover, .compra-hijo4:hover, .btn:hover {
+  background: white;
+  color: black;
+}
+
+.contenido-nosotros {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  margin: auto;
+  color: black;
+  width: 80%;
+  background: rgba(255, 255, 255, 0.205);
+
+  p {
+    width: 80%;
+    margin: auto;
+  }
+
+  &:hover {
+    color: white;
+    width: 80%;
+    margin: auto;
+    background: black;
+  }
+}
+
+/* fin de main */
+/* inicia footer */
+
+footer {
+  grid-area: footer;
+  background: linear-gradient(to left, lightblue, pink);
+
+  .titulo {
+    text-align: center;
+  }
+
+  .copy {
+    background: linear-gradient(to left, lightblue, pink);
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+
+  li {
+    font-size: 30px;
+    padding: 0 20px;
+  }
+}
+
+/* fin de footer */
+/* inicio de responsive */
+@media (max-width: 900px) {
+  .grid-padre {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "caja1 caja1" "caja2 caja2" "caja3 caja3" "caja5 caja4";
+  }
+
+  .grid-padre-contacto {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "contacto mapa" "marca datos";
+  }
+
+  .grid-compra-padre {
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "img img img" "td td compra"  "comentario comentario compra";
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-padre {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "caja1" "caja2" "caja3" "caja4" "caja5";
+  }
+
+  .grid-padre-contacto {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "contacto" "mapa" "marca" "datos";
+  }
+
+  .grid-compra-padre {
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "img" "td"  "compra"  "comentario";
+  }
+}
+
+@media (max-width: 350px) {
+  .grid-padre {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "caja1" "caja2" "caja3" "caja4" "caja5";
+  }
+
+  .grid-padre-contacto {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "contacto" "mapa" "marca" "datos";
+  }
+
+  .grid-compra-padre {
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "img" "td"  "compra"  "comentario";
+  }
+}
+
+/* fin de responsive */

@@ -34,21 +34,25 @@ grid-area: caja2;
     padding: 1%;
 	color: white;
 	display: flex;
-	align-items: center;
-	align-content:center ;
+	@extend .alinear-centro;
 	justify-content: center;
 	justify-items: center;
 	grid-area: caja4;
 	background: black;
 	text-align: center;
 }
+
+.alinear-centro{
+	align-items: center;
+	align-content:center;
+}
+
 .hijo-grid5{ 
 	background: black;
-	color: white;
+	color:map-get($map:$paleta, $key:'blanco');
 	width: 90%;
 	display: flex;
-	align-items: center;
-	align-content:center ;
+	@extend .alinear-centro;
 	justify-content: center;
 	justify-items: center;
     grid-area: caja5 ;
@@ -101,12 +105,14 @@ width: 60%;
 
 .datos{
 	grid-area: datos;
+	display: flex;
+	flex-direction: column;
 	margin-right: 0;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 	margin-top: 20px;
-    @include linear-gradient (top);
+    @include linear-gradient (top,$rosa,$azulClaro);
     div{
         ul{ 
             li{

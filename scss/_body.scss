@@ -36,7 +36,7 @@ h2:hover{
 
 
 h1{
-    @include linear-gradient(right);
+    @include linear-gradient(right,$rosa,$azulClaro);
 	text-align: center;
 	color: white;
 	font-family: 'Roboto', sans-serif;
