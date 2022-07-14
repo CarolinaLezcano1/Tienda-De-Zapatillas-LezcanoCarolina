@@ -1,3 +1,4 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
 @import "_variables";
 @import "_body";
 @import "_header";
@@ -373,6 +374,10 @@ textarea {
     margin: auto;
     background: black;
   }
+}
+
+#hola{
+  height: 100% !important;
 }
 
 /* fin de main */

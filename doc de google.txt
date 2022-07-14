@@ -1,1 +1,4 @@
 https://docs.google.com/document/d/1QLogwMxYs61X9bsWnlMnxyToVe_6uNYv-jqVpcEaSp0/edit?usp=sharing
+
+link de pagina subida al servidor
+https://calustore5.netlify.app/index.html
